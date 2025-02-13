@@ -48,7 +48,7 @@
 }
 a{
   display: block;
-
+  word-break: break-all;
 }
 .custom-ul::before {
   content: '';
@@ -77,6 +77,19 @@ a{
       ul::before{
         background-color: #008080;
       }
+
+      /* @media screen and (max-width: 460px) {
+    .my-div {
+        display: block !important;
+    }
+    .my-bio{
+      width: 400px;
+    }
+    .my-bio div{
+      width: 100%;
+    }
+} */
+      
     </style>
 
     <!-- Tailwind CSS Play CDN (mainly for development/testing purposes) -->
@@ -182,7 +195,7 @@ a{
       <!-- END Toggle Dark Mode -->
 
       <div class="container mx-auto max-w-7xl">
-        <div class="grid grid-cols-1 md:grid-cols-12">
+        <div class="my-div grid grid-cols-1 md:grid-cols-12">
           <!-- Info -->
           <div
             class="bg-gray-100 p-5 text-left dark:bg-gray-900 md:col-span-4 lg:p-14"
@@ -291,7 +304,7 @@ a{
           <!-- END Info -->
 
           <!-- Bio -->
-          <div class="mx-auto max-w-2xl space-y-16 p-5 md:col-span-8 md:p-10">
+          <div class="my-bio mx-auto max-w-2xl space-y-16 p-5 md:col-span-8 md:p-10">
             <!-- Education -->
             <div>
               <div
